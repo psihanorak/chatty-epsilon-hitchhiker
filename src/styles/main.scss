@@ -4,3 +4,14 @@
 body {
   background-color: blue;
 }
+
+// this is temporary, change as needed for dark and light mode:
+#user-list {
+  background-color: grey;
+  color: white;
+};
+
+input:checked ~ span {
+  border-color: black;
+  font-weight: bold;
+}
