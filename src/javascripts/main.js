@@ -1,4 +1,9 @@
 import '../styles/main.scss';
 import 'bootstrap';
+import navbar from './navbar';
 
-console.error('Test');
+const init = () => {
+  navbar.makeNavbar();
+};
+
+init();
