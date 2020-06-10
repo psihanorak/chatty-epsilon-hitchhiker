@@ -21,7 +21,7 @@ const messages = [{
 {
   timestamp: 1591749508601,
   sender: 4,
-  text: "Well, if you haven't heard of team Epsilon, hitchhiker, you definitely haven't taken read the guide!",
+  text: "Well, if you haven't heard of team Epsilon, hitchhiker, you definitely haven't read the guide!",
 }];
 
 export default {
