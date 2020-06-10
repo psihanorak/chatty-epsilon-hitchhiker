@@ -23,7 +23,7 @@ const messages = [{
   sender: 4,
   text: "Well, if you haven't heard of team Epsilon, hitchhiker, you definitely haven't read the guide!",
 }];
-
+const getMessages = () => messages;
 export default {
-  messages,
+  getMessages,
 };
