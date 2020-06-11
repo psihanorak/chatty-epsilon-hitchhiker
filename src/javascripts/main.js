@@ -3,12 +3,13 @@ import '../styles/messagesDiv.scss';
 import 'bootstrap';
 import messages from './components/messageUsers';
 import navbar from './navbar';
-import addMessages from './components/addMessages';
+import userList from './components/userList';
 
 const init = () => {
+  userList.createUserButtons();
+  userList.addEventListeners();
   messages.displayMessages();
   navbar.makeNavbar();
-  addMessages.textArea();
 };
 
 init();
