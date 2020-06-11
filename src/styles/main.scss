@@ -1,17 +1,22 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "./navbar.scss";
+@import "./messagesDiv.scss";
+@import "../javascripts/components/userList.scss";
 
 body {
-  background-color: blue;
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
-// this is temporary, change as needed for dark and light mode:
-#user-list {
-  background-color: grey;
-  color: white;
-};
+.app-area {
+  position: absolute;
+  top: 180px;
+  display: flex;
+  flex-direction: row;
+}
 
-input:checked ~ span {
-  border-color: black;
-  font-weight: bold;
+.controls-container {
+  margin: 20px;
 }

@@ -7,15 +7,15 @@ const createUserButtons = () => {
     <form name="userList">
       <legend>Set active user:</legend>
   `;
-  for (let i = 0; i < users.length; i += 1) {
+  users.forEach((user, index) => {
     domString += `
     <div class="form-check">
-    <label class="form-check-label font-weight-light" for="user${i}" id="userLabel${i}">
-    <input class="form-check-input" type="radio" name="userButton" id="user${i}" value="option">
-      <span>${users[i].name}</span>
+    <label class="form-check-label font-weight-light" for="user${index}" id="userLabel${index}">
+    <input class="form-check-input" type="radio" name="userButton" id="user${index}" value="option">
+      <span>${user.name}</span>
     </label>
     </div>`;
-  }
+  });
   domString += '</form>';
   utils.printToDom('#user-list', domString);
 };
@@ -24,7 +24,7 @@ const logInUser = (e) => {
   const userId = (e.target.id);
   const index = parseInt(userId.slice(4), 10);
   const currentUserName = data.getUsers()[index].name;
-  console.error(currentUserName, userId); // user should be pushed to some type of 'current user' function
+  console.error(currentUserName, userId); // these will be used for new messages, etc
 };
 
 const addEventListeners = () => {
