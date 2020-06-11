@@ -1,12 +1,13 @@
 import '../styles/main.scss';
-import userList from './components/userList';
+import '../styles/messagesDiv.scss';
 import 'bootstrap';
-// import utils from './helpers/utils';
+import messages from './components/messageUsers';
+import userList from './components/userList';
 
 const init = () => {
   userList.createUserButtons();
   userList.addEventListeners();
-  // utils.printToDom('#user-list', 'test');
+  messages.displayMessages();
 };
 
 init();
