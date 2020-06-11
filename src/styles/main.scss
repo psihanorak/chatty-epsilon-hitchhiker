@@ -3,10 +3,15 @@
 @import "./navbar.scss";
 @import "../javascripts/components/userList.scss";
 
+$primary-color: #F2F2F2;
+$text-color: black;
+
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: $primary-color;
+  display: grid;
+  color: $text-color;
 }
 
 .app-area {
