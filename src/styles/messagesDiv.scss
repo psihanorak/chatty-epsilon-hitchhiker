@@ -1,11 +1,15 @@
+
 .messages-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  width: 30vw;
+  width: 35vw;
   margin: 20px;
+  background-color: #D7D7D7;
+  border-radius: .3em;
+  
 }
 .card {
   margin: 10px;
+  box-shadow: 2px 2px 15px #6C6C6C;
 }
