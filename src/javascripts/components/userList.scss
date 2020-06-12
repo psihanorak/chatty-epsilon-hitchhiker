@@ -1,8 +1,9 @@
 #user-list {
-  background-color: grey;
+  background-color: #6C757D;
   color: white;
   min-width: 200px;
   margin: 10px;
+  border-radius: 2%;
   
   form {
     padding: 15px;
@@ -12,6 +13,11 @@
     }
   }
 };
+
+#user-list:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
 
 input:checked ~ span {
   border-color: black;

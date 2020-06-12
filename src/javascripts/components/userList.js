@@ -1,4 +1,4 @@
-import data from '../helpers/userData';
+import data from '../helpers/data/userData';
 import utils from '../helpers/utils';
 
 const createUserButtons = () => {

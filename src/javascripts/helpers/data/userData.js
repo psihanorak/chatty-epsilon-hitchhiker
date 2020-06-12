@@ -6,6 +6,17 @@ const users = [
   { id: 'user4', name: 'Mackenzie', trashBefore: 0 },
 ];
 
+let currentUser = 0;
+
+const setCurrentUser = (userid) => {
+  currentUser = userid;
+};
+
 const getUsers = () => users;
 
-export default { getUsers };
+const setTrashBefore = (timestamp) => {
+  users[currentUser].trashBefore = timestamp;
+  console.error(users);
+};
+
+export default { getUsers, setTrashBefore, setCurrentUser };

@@ -4,6 +4,7 @@ import 'bootstrap';
 import messages from './components/messageUsers';
 import navbar from './navbar';
 import userList from './components/userList';
+import clearHistory from './components/clearHistory';
 
 
 const init = () => {
@@ -11,6 +12,7 @@ const init = () => {
   userList.addEventListeners();
   messages.displayMessages();
   navbar.makeNavbar();
+  clearHistory.createClearButton();
 };
 
 init();
