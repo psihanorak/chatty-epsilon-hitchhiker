@@ -1,5 +1,6 @@
 import data from '../helpers/data/userData';
 import utils from '../helpers/utils';
+import messageUsers from './messageUsers';
 
 const createUserButtons = () => {
   const users = data.getUsers();
@@ -23,8 +24,8 @@ const createUserButtons = () => {
 const logInUser = (e) => {
   const userId = (e.target.id);
   const index = parseInt(userId.slice(4), 10);
-  const currentUserName = data.getUsers()[index].name;
-  console.error(currentUserName, userId); // these will be used for new messages, etc
+  data.setCurrentUser(index);
+  messageUsers.displayMessages();
 };
 
 const addEventListeners = () => {

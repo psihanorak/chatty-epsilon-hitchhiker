@@ -8,15 +8,20 @@ const users = [
 
 let currentUser = 0;
 
-const setCurrentUser = (userid) => {
-  currentUser = userid;
+const getAllusers = () => users;
+
+const getCurrentUser = () => currentUser;
+
+const setCurrentUser = (userIndex) => {
+  currentUser = userIndex;
 };
 
 const getUsers = () => users;
 
 const setTrashBefore = (timestamp) => {
   users[currentUser].trashBefore = timestamp;
-  console.error(users);
 };
 
-export default { getUsers, setTrashBefore, setCurrentUser };
+export default {
+  getUsers, setTrashBefore, setCurrentUser, getCurrentUser, getAllusers,
+};

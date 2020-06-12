@@ -1,10 +1,11 @@
 import data from '../helpers/data/userData';
 import utils from '../helpers/utils';
+import messageUsers from './messageUsers';
 
 const clearHistory = () => {
-  console.error('CLEAR');
   $('#warningModal').modal('toggle');
   data.setTrashBefore(Date.now());
+  messageUsers.displayMessages();
 };
 
 const createWarning = () => {
