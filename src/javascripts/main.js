@@ -5,6 +5,7 @@ import messages from './components/messageUsers';
 import navbar from './components/navbar';
 import userList from './components/userList';
 import addMessage from './components/addMessage';
+import clearHistory from './components/clearHistory';
 
 const init = () => {
   userList.createUserButtons();
@@ -14,6 +15,7 @@ const init = () => {
   addMessage.textArea();
   addMessage.submit();
   addMessage.createNewMessage();
+  clearHistory.createClearButton();
 };
 
 init();
