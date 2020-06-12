@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Ranchers&display=swap');
+
+#navbar {
+  display: table;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+
+  img {
+    position: relative;
+    width: 7%;
+    height: 7%;
+    left: 10%;
+  }
+
+  h1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Bangers', cursive;
+    display: inline;
+    position: relative;
+    left: 30%;
+    letter-spacing: .5em;
+    font-size: 3rem;
+  }
+}

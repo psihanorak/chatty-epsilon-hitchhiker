@@ -1,7 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
-@import "./navbar.scss";
+@import "../javascripts/components/navbar.scss";
 @import "../javascripts/components/userList.scss";
+@import "../javascripts/components/addMessage.scss";
 
 body {
   margin: 0;
