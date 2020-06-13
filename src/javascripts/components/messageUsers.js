@@ -15,7 +15,7 @@ const displayMessages = () => {
     if (message.timestamp > users[userId].trashBefore) {
       domString += `<div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h6>${users[message.sender].name}</h6>
+                    <h6>${users[userId].name}</h6>
                       <p>${message.text}</p>
                       <h6 class="card-name card-subtitle text-muted">${moment(message.timestamp).format('MMMM D, YYYY h:mm A')}</h6>
                     </div >

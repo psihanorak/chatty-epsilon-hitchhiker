@@ -15,6 +15,8 @@ body {
   top: 180px;
   display: flex;
   flex-direction: row;
+  width: 100vw;
+  height: calc(100vw - 180px);
 }
 
 .controls-container {
@@ -23,4 +25,62 @@ body {
     margin: 10px;
     width: 200px;
   }
+}
+
+// layout divs:
+
+#top {
+  width:100vw;
+  position:fixed;
+  top:0;
+  left:0;
+  height: 140px;
+}
+
+#user-messages {
+  position: fixed;
+  top: 180px;
+  left: 0;
+  height: calc(100vh - 460px);
+  overflow: auto;
+  background-color: lightblue;
+  width: calc(100vw - 290px);
+  padding: 20px;
+    // display: flex;
+    // flex-direction: column;
+    // width: 75%;
+    // align-items: center;
+    // height: 300px;
+}
+
+#controls-container {
+  position: fixed;
+  top: 180px;
+  right: 0;
+  height: calc(100vh - 460px);
+  background-color: blue;
+  width: 275px;
+  justify-content: space-between;
+  button {
+    margin: 10px;
+    width: 200px;
+  }
+}
+
+#bottom-l {
+  width: calc(100vw - 280px);
+  bottom: 0;
+  left: 0;
+  height: 250px;
+  position:fixed;
+  background-color: #FAF000;
+}
+
+#bottom-r {
+  width: 275px;
+  bottom: 0;
+  right: 0;
+  height: 250px;
+  position: fixed;
+  background-color: grey;
 }

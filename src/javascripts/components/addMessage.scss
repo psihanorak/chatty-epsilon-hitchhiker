@@ -17,3 +17,11 @@
     margin-bottom: 2rem;
   }
 }
+
+#user-messages {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-items: center;
+  height: 300px;
+}
