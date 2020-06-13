@@ -1,0 +1,23 @@
+#text-area {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 45%;
+  
+
+  #text {
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 0px solid #000000;
+  }
+
+  #submit {
+    position: relative;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+  }
+  #form {
+    width: 200px;
+  }
+}
