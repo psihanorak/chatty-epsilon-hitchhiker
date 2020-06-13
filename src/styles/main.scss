@@ -25,27 +25,10 @@ html {
       grid-template-columns: repeat(auto-fit);
     }
   }
-}
-
-  // .app-area {
-  //   position: absolute;
-  //   top: 180px;
-  //   display: flex;
-  //   flex-direction: row;
-  // }
 
   .controls-container {
     margin: 20px;
   }
-
-  // .app-area {
-  //   position: absolute;
-  //   top: 180px;
-  //   display: flex;
-  //   flex-direction: row;
-  //   width: 100vw;
-  //   height: calc(100vw - 180px);
-  // }
 
 nav {
   input[type=checkbox]{
@@ -98,9 +81,7 @@ nav {
     transition-delay: 0 !important;
     }
   }
-
-/// end NEW STUFF
-
+}
 
 html[data-theme='dark'] {
   height: 100%;
@@ -150,7 +131,6 @@ html[data-theme='dark'] {
   .controls-container {
     margin: 20px;
   }
-
 
 nav {
   input[type=checkbox]{
