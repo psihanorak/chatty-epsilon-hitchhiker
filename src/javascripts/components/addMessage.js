@@ -8,12 +8,8 @@ const textArea = () => {
   let domString = '';
 
   domString += `<form id="form">
-                <div>
                 <textarea id="text" name="textarea_field" placeholder="Type here..." rows="10" cols="80"></textarea>
-                </div>
-                <div>
                 <button id="submit" type="button" class="btn btn-light">Submit</button>
-                </div>
                 </form>`;
   utils.printToDom('#text-area', domString);
 };
