@@ -1,4 +1,4 @@
-#text-area {
+#compose-area {
 
   #text {
     border-radius: 5px 5px 5px 5px;
@@ -8,11 +8,14 @@
   }
 
   #submit {
-    position: relative;
+    // position: relative;
     margin-left: 1rem;
     margin-bottom: 2rem;
+    height: 38px;
   }
+  
   #form {
-    width: 200px;
+    // width: 200px;
+    display: flex;
   }
 }
