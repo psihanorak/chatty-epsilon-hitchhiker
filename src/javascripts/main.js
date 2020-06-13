@@ -6,6 +6,7 @@ import navbar from './components/navbar';
 import userList from './components/userList';
 import addMessage from './components/addMessage';
 import clearHistory from './components/clearHistory';
+import themese from './components/darkTheme';
 
 const init = () => {
   userList.createUserButtons();
@@ -16,6 +17,7 @@ const init = () => {
   addMessage.submit();
   addMessage.createNewMessage();
   clearHistory.createClearButton();
+  themese.buttonListeners();
 };
 
 init();

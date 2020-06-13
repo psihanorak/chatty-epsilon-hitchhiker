@@ -9,6 +9,7 @@ const makeNavbar = () => {
                 <img src="src/images/logo.jpg" alt="">
                 <h1>Thanks for all the fish!</h1>
                 </a>
+                <button type="button" class="btn btn-dark" id="theme">light / dark</button>
                 </nav>
                 </div>`;
   utils.printToDom('#navbar', domString);

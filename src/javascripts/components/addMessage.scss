@@ -2,7 +2,8 @@
   display: flex;
   position: fixed;
   bottom: 0;
-  left: 15%;
+  left: 45%;
+  
 
   #text {
     border-radius: 5px 5px 5px 5px;
@@ -15,6 +16,9 @@
     position: relative;
     margin-left: 1rem;
     margin-bottom: 2rem;
+  }
+  #form {
+    width: 200px;
   }
 }
 

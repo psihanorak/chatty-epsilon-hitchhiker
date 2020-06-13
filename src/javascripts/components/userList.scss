@@ -1,10 +1,11 @@
 #user-list {
-  background-color: #6C757D;
+  background-color: rgb(36, 36, 36);
   color: white;
   width: 200px;
   margin: 10px;
+  height: auto;
   border-radius: 2%;
-  
+
   form {
     padding: 15px;
     legend {
@@ -15,7 +16,7 @@
 };
 
 #user-list:hover {
-  background-color: #5a6268;
+  background-color: #5f5f5f;
   border-color: #545b62;
 }
 
