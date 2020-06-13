@@ -15,7 +15,7 @@ const init = () => {
   navbar.makeNavbar();
   addMessage.textArea();
   addMessage.submit();
-  addMessage.createNewMessage();
+  // addMessage.createNewMessage();
   clearHistory.createClearButton();
   themese.buttonListeners();
 };

@@ -5,16 +5,19 @@ import userData from '../helpers/data/userData';
 
 const displayMessages = () => {
   const messages = data.getMessages();
+  if (messages.length > 20) {
+    messages.splice(0, (messages.length - 20));
+  }
   const users = userData.getUsers();
   const userId = userData.getCurrentUser();
   let domString = '';
   messages.forEach((message) => {
     if (message.timestamp > users[userId].trashBefore) {
       domString += `<div class="card" style="width: 18rem;">
-                    <h2>${message.sender}</h2>
                     <div class="card-body">
+                    <h6>${users[message.sender].name}</h6>
                       <p>${message.text}</p>
-                      <h5 class="card-name">${moment(message.timestamp).format('MMMM D, YYYY h:mm A')}</h5>
+                      <h6 class="card-name card-subtitle text-muted">${moment(message.timestamp).format('MMMM D, YYYY h:mm A')}</h6>
                     </div >
                   </div > `;
     }
