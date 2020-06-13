@@ -1,9 +1,8 @@
 #text-area {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  left: 45%;
-  
+  // display: flex;
+  // position: fixed;
+  // bottom: 0;
+  // left: 45%;
 
   #text {
     border-radius: 5px 5px 5px 5px;
@@ -22,10 +21,3 @@
   }
 }
 
-#user-messages {
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  align-items: center;
-  height: 300px;
-}
