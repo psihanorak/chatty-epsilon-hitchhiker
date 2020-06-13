@@ -46,11 +46,6 @@ body {
   background-color: lightblue;
   width: calc(100vw - 290px);
   padding: 20px;
-    // display: flex;
-    // flex-direction: column;
-    // width: 75%;
-    // align-items: center;
-    // height: 300px;
 }
 
 #controls-container {
@@ -60,7 +55,7 @@ body {
   height: calc(100vh - 460px);
   background-color: blue;
   width: 275px;
-  justify-content: space-between;
+  justify-content: center;
   button {
     margin: 10px;
     width: 200px;
