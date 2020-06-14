@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme='light'>
 
 <head>
   <meta charset="UTF-8">
@@ -8,25 +8,26 @@
 </head>
 
 <body>
-
-  <div id="navbar"></div>
-  <div class="app-area">
-    <div class="messages-container">
-      <div id="user-messages"></div>
+  <div id="app">
+    <div id="top">
+      <div id="navbar"></div>
     </div>
-    <div class="controls-container">
-      <div id="history-controls"></div>
-      
-      <div id="user-list"></div>
-      
-    </div>
+      <div id="middle">
+          <div id="user-messages"></div>
+          <div id="controls-container">
+            <div id="history-controls"></div>
+            <div id="user-list"></div>
+            <div id="dark-mode"></div>
+          </div>
+      </div>
+      <div id="bottom">
+        <div id="compose-area"></div>
+      </div>
+      <div id="modal"></div>
   </div>
   <div id="text-area"></div>
   <div id="modal"></div>
   <div id="checkbox"></div>
 
 </body>
-
-
-
 </html>

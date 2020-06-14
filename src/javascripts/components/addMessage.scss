@@ -1,16 +1,25 @@
-textarea {
-  display: flex;
-  position: fixed;
-  width: 65%;
-  height: 15%;
-  bottom: 3rem;
-  left: 15%;
-  border-radius: 5px 5px 5px 5px;
-}
+#compose-area {
+  
+  #text {
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 0px solid #000000;
+  }
 
-button#submit {
-  display: flex;
-  position: fixed;
-  bottom: 3rem;
-  left: 81%;
+  #submit {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    height: 38px;
+  }
+  
+  #form {
+    display: flex;
+  }
+
+  button {
+    background-color: #6C757D;
+    color: white;
+    border-color: #6C757D;
+  }
 }
