@@ -13,7 +13,7 @@ const displayMessages = () => {
   let domString = '';
   messages.forEach((message) => {
     if (message.timestamp > users[userId].trashBefore) {
-      domString += `<div class="card" style="width: 18rem;">
+      domString += `<div class="card" style="width: 70%;">
                     <div class="card-body">
                     <h6>${users[message.sender].name}</h6>
                       <p>${message.text}</p>

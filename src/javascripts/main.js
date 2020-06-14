@@ -6,7 +6,7 @@ import navbar from './components/navbar';
 import userList from './components/userList';
 import addMessage from './components/addMessage';
 import clearHistory from './components/clearHistory';
-import themese from './components/darkTheme';
+import themes from './components/darkTheme';
 
 const init = () => {
   userList.createUserButtons();
@@ -15,9 +15,10 @@ const init = () => {
   navbar.makeNavbar();
   addMessage.textArea();
   addMessage.submit();
-  // addMessage.createNewMessage();
   clearHistory.createClearButton();
-  themese.buttonListeners();
+  themes.createDarkThemeButton();
+  themes.buttonListeners();
+  $('#user-messages').animate({ scrollTop: $('#user-messages').prop('scrollHeight') }, 1000);
 };
 
 init();

@@ -19,6 +19,8 @@ const createUserButtons = () => {
   });
   domString += '</form>';
   utils.printToDom('#user-list', domString);
+  const radiobtn = document.getElementById('user0');
+  radiobtn.checked = true;
 };
 
 const logInUser = (e) => {
