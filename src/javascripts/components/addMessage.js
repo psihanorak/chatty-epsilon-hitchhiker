@@ -8,7 +8,7 @@ const textArea = () => {
 
   domString += `<form id="form">
                 <label for="text"></label>
-                <textarea id="text" name="textarea_field" placeholder="Type here..." rows="10" cols="80"></textarea>
+                <textarea id="text" name="textarea_field" placeholder="Type here..."></textarea>
                 <button id="submit" type="button" class="btn btn-light">Submit</button>
                 </form>`;
   utils.printToDom('#compose-area', domString);
