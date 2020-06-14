@@ -28,7 +28,7 @@ const createWarning = () => {
           </div>
         </div>
       </div>
-    </div>;`;
+    </div>`;
   utils.printToDom('#modal', domString);
   $('#confirmClear').click(() => {
     clearHistory();

@@ -8,14 +8,18 @@
   }
 
   #submit {
-    // position: relative;
     margin-left: 1rem;
     margin-bottom: 2rem;
     height: 38px;
   }
   
   #form {
-    // width: 200px;
     display: flex;
+  }
+
+  button {
+    background-color: #6C757D;
+    color: white;
+    border-color: #6C757D;
   }
 }
