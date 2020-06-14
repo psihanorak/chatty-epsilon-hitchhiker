@@ -6,6 +6,7 @@ import navbar from './components/navbar';
 import userList from './components/userList';
 import addMessage from './components/addMessage';
 import clearHistory from './components/clearHistory';
+import checkbox from './components/largeText';
 
 const init = () => {
   userList.createUserButtons();
@@ -16,6 +17,8 @@ const init = () => {
   addMessage.submit();
   addMessage.createNewMessage();
   clearHistory.createClearButton();
+  checkbox.largeText();
+  checkbox.makeLarge();
 };
 
 init();

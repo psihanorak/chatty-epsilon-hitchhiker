@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#checkbox {
+  display: flex;
+  position: fixed;
+  bottom: 1rem;
+  left: 15%;
+
+  label {
+    color: white;
+    margin-left: 0.25rem;
+  }
+}
+
+.enlarge {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}

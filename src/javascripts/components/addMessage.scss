@@ -1,19 +1,16 @@
-#text-area {
+textarea {
   display: flex;
   position: fixed;
-  bottom: 0;
+  width: 65%;
+  height: 15%;
+  bottom: 3rem;
   left: 15%;
+  border-radius: 5px 5px 5px 5px;
+}
 
-  #text {
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    border: 0px solid #000000;
-  }
-
-  #submit {
-    position: relative;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-  }
+button#submit {
+  display: flex;
+  position: fixed;
+  bottom: 3rem;
+  left: 81%;
 }

@@ -7,7 +7,8 @@ const textArea = () => {
   let domString = '';
 
   domString += `<form id="form">
-                <textarea id="text" name="textarea_field" placeholder="Type here..." rows="10" cols="120"></textarea>
+                <label for="text"></label>
+                <textarea id="text" name="textarea_field" placeholder="Type here..."></textarea>
                 <button id="submit" type="button" class="btn btn-light">Submit</button>
                 </form>`;
   utils.printToDom('#text-area', domString);
