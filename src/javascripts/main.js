@@ -6,6 +6,7 @@ import navbar from './components/navbar';
 import userList from './components/userList';
 import addMessage from './components/addMessage';
 import clearHistory from './components/clearHistory';
+import checkbox from './components/largeText';
 import themes from './components/darkTheme';
 
 const init = () => {
@@ -16,6 +17,8 @@ const init = () => {
   addMessage.textArea();
   addMessage.submit();
   clearHistory.createClearButton();
+  checkbox.largeText();
+  checkbox.makeLarge();
   themes.createDarkThemeButton();
   themes.buttonListeners();
   $('#user-messages').animate({ scrollTop: $('#user-messages').prop('scrollHeight') }, 1000);
