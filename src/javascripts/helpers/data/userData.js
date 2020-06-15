@@ -54,12 +54,12 @@ const setTrashBefore = (timestamp) => {
   users[currentUser].trashBefore = timestamp;
 };
 
-const addLike = (messageIndex) => {
-  users[currentUser].likes.push(messageIndex);
+const addLike = (msgID) => {
+  users[currentUser].likes.push(msgID);
 };
 
-const addDisike = (messageIndex) => {
-  users[currentUser].dislikes.push(messageIndex);
+const addDisike = (msgID) => {
+  users[currentUser].dislikes.push(msgID);
 };
 
 export default {

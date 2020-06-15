@@ -171,25 +171,39 @@ const deleteMessage = (msgID) => {
   });
 };
 
-const likeMessage = (buttonID, like) => {
-  const msgIndex = buttonID.substring(5);
-  const userInfo = userData.getCurrentUserInfo();
-  if (like) {
-    if (!userInfo.likes.includes(msgIndex)) {
-      messages[msgIndex].likes += 1;
-      userData.addLike(msgIndex);
-      if (userInfo.dislikes.includes(msgIndex)) {
-        console.error(userInfo.dislikes);
-        userInfo.dislikes = userInfo.dislikes.filter((disliked) => disliked !== msgIndex);
-        console.error(userInfo.dislikes);
-        messages[msgIndex].dislikes -= 1;
+const changeLikeTally = (msgID, likeAdd, dislikeAdd) => {
+  const msgSender = parseInt(msgID.split('-')[0], 10);
+  const msgTimestamp = parseInt(msgID.split('-')[1], 10);
+  messages.forEach((message, index) => {
+    if (message.sender === msgSender) {
+      if (message.timestamp === msgTimestamp) {
+        messages[index].likes += likeAdd;
+        messages[index].dislikes += dislikeAdd;
       }
     }
-  } else if (!userInfo.dislikes.includes(msgIndex)) {
-    messages[msgIndex].dislikes += 1;
-    userData.addDisike(msgIndex);
+  });
+};
+
+const likeMessage = (buttonID, like) => {
+  const msgID = buttonID.substring(5);
+  const userInfo = userData.getCurrentUserInfo();
+  if (like) {
+    if (!userInfo.likes.includes(msgID)) {
+      changeLikeTally(msgID, 1, 0);
+      userData.addLike(msgID);
+      if (userInfo.dislikes.includes(msgID)) {
+        userInfo.dislikes = userInfo.dislikes.filter((disliked) => disliked !== msgID);
+        changeLikeTally(msgID, 0, -1);
+      }
+    }
+  } else if (!userInfo.dislikes.includes(msgID)) {
+    changeLikeTally(msgID, 0, 1);
+    userData.addDisike(msgID);
+    if (userInfo.likes.includes(msgID)) {
+      userInfo.likes = userInfo.likes.filter((liked) => liked !== msgID);
+      changeLikeTally(msgID, -1, 0);
+    }
   }
-  // console.error(userInfo);
 };
 
 export default {

@@ -11,7 +11,7 @@ const displayMessages = () => {
   const users = userData.getUsers();
   const userId = userData.getCurrentUser();
   let domString = '';
-  messages.forEach((message, index) => {
+  messages.forEach((message) => {
     const id = `${message.sender}-${message.timestamp}`;
     if (message.timestamp > users[userId].trashBefore) {
       domString += `
@@ -32,13 +32,13 @@ const displayMessages = () => {
       }
       domString += '</span>';
 
-      /* Only show the delete icon/functionality if the current user wrote the message */
+      // Only show the delete icon/functionality if the current user wrote the message
       if (userId === message.sender) {
         domString += `<i class="fas fa-2x fa-trash-alt text-danger d-flex justify-content-end delete-message-button" id="${id}"></i>`;
       } else {
         domString += `<span class="like-buttons d-flex justify-content-end">
-                        <i class="far fa-thumbs-up like-button" id="like-${index}"></i> 
-                        <i class="far fa-thumbs-down ml-1 dislike-button" id="disl-${index}"></i>
+                        <i class="far fa-thumbs-up like-button" id="like-${id}"></i> 
+                        <i class="far fa-thumbs-down ml-1 dislike-button" id="disl-${id}"></i>
                       </span>`;
       }
 
