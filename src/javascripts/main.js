@@ -8,11 +8,13 @@ import addMessage from './components/addMessage';
 import clearHistory from './components/clearHistory';
 import checkbox from './components/largeText';
 import themes from './components/darkTheme';
+import deleteMessage from './components/deleteMessage';
 
 const init = () => {
   userList.createUserButtons();
   userList.addEventListeners();
   messages.displayMessages();
+  deleteMessage.deleteMessageListeners();
   navbar.makeNavbar();
   addMessage.textArea();
   addMessage.submit();
