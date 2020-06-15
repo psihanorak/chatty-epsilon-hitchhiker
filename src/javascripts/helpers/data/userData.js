@@ -1,9 +1,39 @@
 const users = [
-  { id: 'user0', name: 'Xavier', trashBefore: 0 },
-  { id: 'user1', name: 'Joanna', trashBefore: 0 },
-  { id: 'user2', name: 'Gunter', trashBefore: 0 },
-  { id: 'user3', name: 'Sven', trashBefore: 0 },
-  { id: 'user4', name: 'Mackenzie', trashBefore: 0 },
+  {
+    id: 'user0',
+    name: 'Xavier',
+    trashBefore: 0,
+    likes: [],
+    dislikes: [],
+  },
+  {
+    id: 'user1',
+    name: 'Joanna',
+    trashBefore: 0,
+    likes: [],
+    dislikes: [],
+  },
+  {
+    id: 'user2',
+    name: 'Gunter',
+    trashBefore: 0,
+    likes: [],
+    dislikes: [],
+  },
+  {
+    id: 'user3',
+    name: 'Sven',
+    trashBefore: 0,
+    likes: [],
+    dislikes: [],
+  },
+  {
+    id: 'user4',
+    name: 'Mackenzie',
+    trashBefore: 0,
+    likes: [],
+    dislikes: [],
+  },
 ];
 
 let currentUser = 0;
@@ -11,6 +41,8 @@ let currentUser = 0;
 const getAllusers = () => users;
 
 const getCurrentUser = () => currentUser;
+
+const getCurrentUserInfo = () => users[currentUser];
 
 const setCurrentUser = (userIndex) => {
   currentUser = userIndex;
@@ -22,6 +54,14 @@ const setTrashBefore = (timestamp) => {
   users[currentUser].trashBefore = timestamp;
 };
 
+const addLike = (messageIndex) => {
+  users[currentUser].likes.push(messageIndex);
+};
+
+const addDisike = (messageIndex) => {
+  users[currentUser].dislikes.push(messageIndex);
+};
+
 export default {
-  getUsers, setTrashBefore, setCurrentUser, getCurrentUser, getAllusers,
+  getUsers, setTrashBefore, setCurrentUser, getCurrentUser, getAllusers, getCurrentUserInfo, addLike, addDisike,
 };
