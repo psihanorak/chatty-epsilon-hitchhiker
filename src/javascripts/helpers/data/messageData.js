@@ -111,6 +111,21 @@ const messages = [{
 ];
 
 const getMessages = () => messages;
+
+const deleteMessage = (msgID) => {
+  const msgSender = parseInt(msgID.split('-')[0], 10);
+  const msgTimestamp = parseInt(msgID.split('-')[1], 10);
+
+  messages.forEach((message) => {
+    if (message.sender === msgSender) {
+      if (message.timestamp === msgTimestamp) {
+        messages.splice(messages.indexOf(message), 1);
+      }
+    }
+  });
+};
+
 export default {
   getMessages,
+  deleteMessage,
 };
