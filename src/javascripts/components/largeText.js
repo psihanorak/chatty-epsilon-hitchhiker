@@ -11,11 +11,14 @@ const largeText = () => {
 
 const changeText = (e) => {
   const messages = document.querySelector('#text').classList;
+  const allMessages = document.querySelector('#user-messages').classList;
   if (e.target.checked) {
     messages.add('enlarge');
+    allMessages.add('enlarge');
     return;
   }
   messages.remove('enlarge');
+  allMessages.remove('enlarge');
 };
 
 const makeLarge = () => {

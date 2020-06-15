@@ -11,5 +11,4 @@ const makeNavbar = () => {
   utils.printToDom('#navbar', domString);
 };
 
-
 export default { makeNavbar };
