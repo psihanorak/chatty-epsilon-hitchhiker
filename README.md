@@ -9,7 +9,7 @@ Hitch Hikers Guide To The Galaxy is a group project that created and environment
 * Messages can be cleared.
 * The user can toggle between large and small text.
 
-# How to Run
+## How to Run
 1. Clone down the repo.
 2. Install NPM.
 3. Run 'NPM start' in the terminal.
