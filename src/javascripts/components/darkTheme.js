@@ -22,7 +22,6 @@ const createDarkThemeButton = () => {
   utils.printToDom('#dark-mode', domString);
 };
 
-// button listeners
 const buttonListeners = () => {
   $('#theme').click(darkTheme);
 };

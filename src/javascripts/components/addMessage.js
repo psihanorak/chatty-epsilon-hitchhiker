@@ -1,7 +1,10 @@
 import utils from '../helpers/utils';
 import messageData from '../helpers/data/messageData';
-import messageUsers from './messageUsers';
 import userData from '../helpers/data/userData';
+
+import messageUsers from './messageUsers';
+
+import './addMessage.scss';
 
 const textArea = () => {
   let domString = '';

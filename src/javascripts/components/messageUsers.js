@@ -1,6 +1,6 @@
 import moment from 'moment';
-import data from '../helpers/data/messageData';
 import utils from '../helpers/utils';
+import data from '../helpers/data/messageData';
 import userData from '../helpers/data/userData';
 
 const displayMessages = () => {
@@ -21,7 +21,7 @@ const displayMessages = () => {
           <p>${message.text}</p>
           <span class="card-name card-subtitle text-muted">
           ${moment(message.timestamp).format('MMMM D, YYYY h:mm A')}`;
-      // show likes/dislikes if there are any:
+
       if (message.likes > 0) {
         domString += `
         <i class="far fa-thumbs-up"></i>${message.likes} `;
@@ -32,7 +32,6 @@ const displayMessages = () => {
       }
       domString += '</span>';
 
-      // Only show the delete icon/functionality if the current user wrote the message
       if (userId === message.sender) {
         domString += `<i class="fas fa-2x fa-trash-alt text-danger d-flex justify-content-end delete-message-button" id="${id}"></i>`;
       } else {

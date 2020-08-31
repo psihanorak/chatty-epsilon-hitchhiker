@@ -1,5 +1,6 @@
-import data from '../helpers/data/userData';
 import utils from '../helpers/utils';
+import data from '../helpers/data/userData';
+
 import messageUsers from './messageUsers';
 
 const clearHistory = () => {

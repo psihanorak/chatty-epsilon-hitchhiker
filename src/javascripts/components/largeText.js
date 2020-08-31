@@ -1,5 +1,7 @@
 import utils from '../helpers/utils';
 
+import './largeText.scss';
+
 const largeText = () => {
   let domString = '';
   domString += `<div>
